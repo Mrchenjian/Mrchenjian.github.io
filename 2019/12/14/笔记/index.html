@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>笔记 | 勾三故事</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今日内容简介 对象的解构赋值 对象的简写形式 函数的新功能 函数的默认值 剩余值 箭头函数   数组的新功能、字符串的新功能、set对象的使用 node介绍和使用  对象的解构赋值 基本使用 其他使用（属性左右不对应的情况，没有找到取值默认undefined）   设置属性别名 let {username: un} &#x3D; {username: ‘jack’};   设置默认值 let {userna">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;14&#x2F;%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:site_name" content="勾三故事">
+<meta property="og:description" content="今日内容简介 对象的解构赋值 对象的简写形式 函数的新功能 函数的默认值 剩余值 箭头函数   数组的新功能、字符串的新功能、set对象的使用 node介绍和使用  对象的解构赋值 基本使用 其他使用（属性左右不对应的情况，没有找到取值默认undefined）   设置属性别名 let {username: un} &#x3D; {username: ‘jack’};   设置默认值 let {userna">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-08T06:50:31.000Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="勾三故事" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">勾三故事</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/14/%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2019-12-14T07:30:51.032Z" itemprop="datePublished">2019-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="今日内容简介"><a href="#今日内容简介" class="headerlink" title="今日内容简介"></a>今日内容简介</h1><ul>
+<li>对象的解构赋值</li>
+<li>对象的简写形式</li>
+<li>函数的新功能<ul>
+<li>函数的默认值</li>
+<li>剩余值</li>
+<li>箭头函数</li>
+</ul>
+</li>
+<li>数组的新功能、字符串的新功能、set对象的使用</li>
+<li>node介绍和使用</li>
+</ul>
+<h1 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h1><ul>
+<li>基本使用<ul>
+<li>其他使用（属性左右不对应的情况，没有找到取值默认undefined）</li>
+</ul>
+</li>
+<li>设置属性别名<ul>
+<li>let {username: un} = {username: ‘jack’};</li>
+</ul>
+</li>
+<li>设置默认值<ul>
+<li>let {username = ‘jack’} = {age : 18};</li>
+</ul>
+</li>
+<li>设置剩余值的保存<ul>
+<li>let {age, …qiTa} = {age: 21, gender: ‘女’, aiHao: ‘吃’};<ul>
+<li>qiTa的取值为 {gender: ‘女’, aiHao: ‘吃’}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="对象的简写方式"><a href="#对象的简写方式" class="headerlink" title="对象的简写方式"></a>对象的简写方式</h1><ul>
+<li><p>属性的简写</p>
+<ul>
+<li>前提：要设置的属性名需要与保存值的变量名相同</li>
+</ul>
+</li>
+<li><p>方法的简写</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> username = <span class="string">'jack'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> userAge = <span class="number">18</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  username,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  userAge,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  sayHi: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="comment">// 以前的写法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// ...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  sayHehe() &#123; <span class="comment">// 简写</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// ...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h1 id="函数的相关操作"><a href="#函数的相关操作" class="headerlink" title="函数的相关操作"></a>函数的相关操作</h1><h2 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h2><ul>
+<li>设置方式：在函数的形参位置书写   形参名 = 默认值  的形式</li>
+<li>函数的形参也可以结合解构赋值使用</li>
+</ul>
+<h2 id="函数参数的剩余值"><a href="#函数参数的剩余值" class="headerlink" title="函数参数的剩余值"></a>函数参数的剩余值</h2><ul>
+<li>设置方式：  在某个形参前书写…， 位置为最后，用来获取剩余的所有实参</li>
+<li>比arguments好的地方：剩余值的结果是数组，不是伪数组。可以与其他参数分开获取。</li>
+</ul>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><ul>
+<li><p>作用：用来对匿名函数写法进行简化</p>
+</li>
+<li><p>设置方式:  (参数位置) =&gt; { 函数体 }</p>
+</li>
+<li><p>参数的使用：</p>
+<ul>
+<li>无参数和多于1个的参数必须加()设置参数</li>
+<li>单个参数可以不加()</li>
+<li>小结：分不清，全加即可</li>
+</ul>
+</li>
+<li><p>返回值的使用</p>
+<ul>
+<li>如果函数体中只需要设置返回值，不写=&gt;后面的{}和return</li>
+<li>其他情况全加即可</li>
+<li>小结：分不清，全加即可</li>
+</ul>
+</li>
+<li><p>箭头函数中的this问题</p>
+<ul>
+<li>箭头函数中没有单独的this，this值取决于箭头函数所在的环境</li>
+<li>如果设置匿名函数时，没用this，可以直接使用箭头函数</li>
+</ul>
+</li>
+</ul>
+<h1 id="数组的功能扩展"><a href="#数组的功能扩展" class="headerlink" title="数组的功能扩展"></a>数组的功能扩展</h1><h2 id="扩展运算符"><a href="#扩展运算符" class="headerlink" title="扩展运算符"></a>扩展运算符</h2><ul>
+<li>格式： …数组    相当于将数组展开</li>
+</ul>
+<h2 id="数组的新方法"><a href="#数组的新方法" class="headerlink" title="数组的新方法"></a>数组的新方法</h2><ul>
+<li>Array.from() 将伪数组转换为数组</li>
+<li>arr.find() 和 arr.findIndex()<ul>
+<li>findIndex()回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+</li>
+</ul>
+<h1 id="字符串的功能扩展"><a href="#字符串的功能扩展" class="headerlink" title="字符串的功能扩展"></a>字符串的功能扩展</h1><ul>
+<li>模板字符串 - 800年前讲过了，就不说了</li>
+<li>后续的方法回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+<h1 id="set对象"><a href="#set对象" class="headerlink" title="set对象"></a>set对象</h1><ul>
+<li>设置方式 new Set()</li>
+<li>特点：不会重复</li>
+<li>其他方法：回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+<h1 id="ES6降级的方式"><a href="#ES6降级的方式" class="headerlink" title="ES6降级的方式"></a>ES6降级的方式</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/14/%E7%AC%94%E8%AE%B0/" data-id="ck5ghi6zz0002kov3dvx9d97b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/14/%E5%B8%B8%E7%94%A8%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">常用数组方法集合</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/14/%E7%AC%94%E8%AE%B0/">笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/14/%E5%B8%B8%E7%94%A8%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88/">常用数组方法集合</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/07/demo/">demo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Mihong<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
