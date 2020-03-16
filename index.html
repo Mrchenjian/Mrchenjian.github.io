@@ -1,544 +1,905 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="http://some.url/to/favicon.ico">
-    <title>Adagio</title>
-    
-        
-            <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-            <link href="https://cdn.bootcss.com/academicons/1.8.6/css/academicons.min.css" rel="stylesheet">
-            <link href="https://cdn.bootcss.com/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-            <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-        
-    
-    <link rel="stylesheet" href="/css/adagio.css">
+  <meta charset="utf-8">
+  
+  <title>小健博客</title>
+  <meta name="author" content="Mihong">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="小健博客"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="小健博客" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
 </head>
+
+
 <body>
-
-<div class="container-fluid">
-    <nav class="nav">
-        <div class="collapse navbar-collapse" id="navbar-sm">
-            
-            
-            <div class="navbar-nav">
-                <a href="https://hexo.io" target="_blank" rel="noopener" class="nav-item nav-link">Hexo</a>
-            </div>
-            
-            <div class="navbar-nav">
-                <a href="http://www.hanlindong.com" target="_blank" rel="noopener" class="nav-item nav-link">Adagio's author</a>
-            </div>
-            
-        </div>
-    </nav>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">小健博客</a></h1>
+  <h2><a href="/"></a></h2>
 </div>
-
-<div class="my-navbar d-md-none">
+<nav id="main-nav" class="alignright">
+  <ul>
     
-    <div class="nav pt-2 pl-1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-sm"
-            aria-expanded="false" aria-label="Toggle Navigation">
-            <i class="fas fa-bars fa-lg"></i>
-        </button>
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-01-ES6" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2020-02-06T14:14:50.205Z"><a href="/2020/02/06/01-ES6/">2020-02-06</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2020/02/06/01-ES6/">01-ES6</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><h2 id="ES6-介绍"><a href="#ES6-介绍" class="headerlink" title="ES6 介绍"></a>ES6 介绍</h2><h3 id="ES6-是什么"><a href="#ES6-是什么" class="headerlink" title="ES6 是什么"></a>ES6 是什么</h3><ul>
+<li><a href="https://baike.baidu.com/item/ECMAScript/1889420" target="_blank" rel="noopener">ECMAScript</a> 6，简称ES6 。是javascript语言下一代标准。它的目标是<code>使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言</code>。它是一种语言标准，6表示版本号。</li>
+<li>ECMA（European Computer Manufacturers Association）的第39号技术专家委员会（Technical Committee 39，简称TC39）负责制订ECMAScript标。每年都会发布ECMAScript的版本：<ul>
+<li>ES2015：称为es6。</li>
+<li>ES2018:   <a href="https://www.ecma-international.org/ecma-262/8.0/index.html" target="_blank" rel="noopener">https://www.ecma-international.org/ecma-262/8.0/index.html</a></li>
+<li>ES2019：<a href="https://www.ecma-international.org/ecma-262/9.0/index.html" target="_blank" rel="noopener">https://www.ecma-international.org/ecma-262/9.0/index.html</a></li>
+</ul>
+</li>
+<li>ES6与javascript的关系：ECMAScript是一种语言标准，javascript实现了这个标准（还有JScript和ActionScript也实现这个标准）。<ul>
+<li>1996年11月，javascript的创造者—–netscape公司，决定将javascript提交给ECMA，以便使之成为国际标准。</li>
+<li>1997年，ECMA发布ECMA-262号标准文件，规定了浏览器脚本语言的标准，并将这种语言称为ECMAScript，这个版本就是1.0版本。</li>
+<li>这个标准开始就是针对javascript语言制定的，但没有称其为javascript，主要原因如下：<ul>
+<li>商标。javascript本身已经被Netscape公司注册为商标。</li>
+<li>ECMA比javascript更开放，更中立。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ES6与ECMAScript2015的关系<ul>
+<li>ECMAScript2015是具体到2015年6月发布的那一版。</li>
+<li>ES6有两层含义<ul>
+<li>特指ECMAScript2015</li>
+<li>泛指ES2015及之后的新增特性，虽然之后的版本应当称为ES2018，ES2019…es6。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="学习内容"><a href="#学习内容" class="headerlink" title="学习内容"></a>学习内容</h3><p>es6新增了很多强大的语法，如下是比较常使用的：</p>
+<ol>
+<li>let 和 const</li>
+<li>解构赋值</li>
+<li>函数扩展</li>
+<li>字符串扩展</li>
+<li>数组扩展</li>
+<li>对象的简写</li>
+</ol>
+<p>其它内容，请自行补充学习。</p>
+<h3 id="学习参考"><a href="#学习参考" class="headerlink" title="学习参考"></a>学习参考</h3><ol>
+<li>各种环境中对es6的支持程度： <a href="http://kangax.github.io/compat-table/es6/" target="_blank" rel="noopener">http://kangax.github.io/compat-table/es6/</a></li>
+<li>ES6电子书： <a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank" rel="noopener">http://es6.ruanyifeng.com/#docs/intro</a></li>
+</ol>
+<h2 id="let-和-const"><a href="#let-和-const" class="headerlink" title="let 和 const"></a>let 和 const</h2><p>我们之前定义变量的关键字是<code>var</code>，它定义的变量有很多奇怪的特点，如下有两点比较突出：</p>
+<ul>
+<li><p>变量先使用再定义—— 变量提升。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">console.log(a);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var a &#x3D; 1;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">console.log(a)</span></pre></td></tr></table></figure>
+</li>
+<li><p>缺少块级作用域。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 此处为了使用循环，定义一个循环变量i。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">for(var i&#x3D;1; i&lt;10;i++)&#123;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; i在循环体之外也能使用。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">console.info(i);</span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>这两个问题都容易让初学者混淆，也容易让从其它语言转过来的程序员混淆。为了解决这些问题，ES6中新增了let。ES6引入const的原因是，因为ES5中并没有提供<code>常量</code>的功能。</p>
+<h3 id="let-变量"><a href="#let-变量" class="headerlink" title="let 变量"></a>let 变量</h3><p>作用：定义变量。（var也是用来定义变量）</p>
+<h3 id="let基本使用"><a href="#let基本使用" class="headerlink" title="let基本使用"></a>let基本使用</h3><p>格式： let 变量名 = 变量值；</p>
+<p>它用来定义变量，基本使用格式与var关键字一样。在可以在使用var 的地方改成let。</p>
+<h3 id="与var的区别"><a href="#与var的区别" class="headerlink" title="与var的区别"></a>与var的区别</h3><ul>
+<li>不能重复定义</li>
+<li>没有变量提升（var定义的变量是有变量提升的），必须<code>先定义再使用</code></li>
+<li>全局变量不会附加到window对象的属性中</li>
+<li>具有块级作用域</li>
+</ul>
+<h4 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h4><h5 id="不能重复定义"><a href="#不能重复定义" class="headerlink" title="不能重复定义"></a>不能重复定义</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. let 定义变量，变量不可以再次定义</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'zhangsan'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">name = <span class="string">'lisi'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(name); <span class="comment">// lisi</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'wangwu'</span>; <span class="comment">// 再次定义，报错：Identifier 'name' has already been declared</span></span></pre></td></tr></table></figure>
+
+<h5 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h5><p>作用域</p>
+<ul>
+<li>全局作用域：变量不属于任何函数，处处可用。</li>
+<li>局部作用域：特指在函数内部定义的变量，它的作用域受function {}所限制。</li>
+<li>块级作用域（ES6中提出的）：在{}内定义的变量，它的作用域受{}所限制。<ul>
+<li>在{} 内部，通过let关键字定义的变量就具有块级作用域。</li>
+</ul>
+</li>
+</ul>
+<p>如果是通过let关键字来定义变量的，则js代码中就可以通过{}来切分作用域了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 具有块级作用域，块就是大括号</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">let</span> age = <span class="number">18</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(age); <span class="comment">// 18</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(age); <span class="comment">// 报错，此作用域中没有age的定义</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 块级作用域的嵌套</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">let</span> a = <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(a);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        a = <span class="number">3</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(a);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(a)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 隐藏的块级作用域</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// i 只能在此范围内使用，因为有块级作用域</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(i);  <span class="comment">// 报错，此作用域中没有i的定义</span></span></pre></td></tr></table></figure>
+
+
+
+<h5 id="没有变量提升"><a href="#没有变量提升" class="headerlink" title="没有变量提升"></a>没有变量提升</h5><p>通过let定义的变量，不再有没有变量提升，必须严格遵守先定义再使用的原则。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(gender); <span class="comment">// 报错，此时还没有定义gender</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> gender = <span class="string">'男'</span>; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>); <span class="comment">// 不报错，输出undefined</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span></pre></td></tr></table></figure>
+
+
+
+<h5 id="全局变量不会赋值加在window对象中"><a href="#全局变量不会赋值加在window对象中" class="headerlink" title="全局变量不会赋值加在window对象中"></a>全局变量不会赋值加在window对象中</h5><p>let声明的全局变量不会以属性的形式附加在window对象中，全局变量与window对象再无关系。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> hobby = <span class="string">'吃饭'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.hobby); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a);</span></pre></td></tr></table></figure>
+
+<p>ES6中保留了对var的支持，你可以在代码中同时使用var和let。当然，建议使用let。</p>
+<h3 id="const-常量"><a href="#const-常量" class="headerlink" title="const 常量"></a>const 常量</h3><h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><p>程序员在协同开发项目时，会遇到一种场景：有一些数据大家都需要用到，但是都不能修改，即数据是<code>只读的</code>。举个例子：在开发公司的网站时，公司的基本信息：地址，公司名，电话等等信息可以在多个地方都需要使用，但不允许去修改。 显示，使用变量来保存这些信息是不适合的，因为变量不是只读的。这种情况下， 我们就可以把这些数据保存在常量中。</p>
+<h4 id="语法格式及命名规范"><a href="#语法格式及命名规范" class="headerlink" title="语法格式及命名规范"></a>语法格式及命名规范</h4><p>作用：定义一个只读的常量。</p>
+<p>格式： <code>const 常量名 = 常量值;</code></p>
+<p>示例：<code>const COMPANY_NAME = &quot;XXX公司&quot;</code></p>
+<p>注意：</p>
+<ul>
+<li>区别于变量名，常量名一般采用全大写的方式，多个单词之间使用_划线分隔。</li>
+</ul>
+<h4 id="const特点"><a href="#const特点" class="headerlink" title="const特点"></a>const特点</h4><p>所谓常量，就是不能修改，即：</p>
+<ul>
+<li>一旦定义就不能修改；</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">a = <span class="number">2</span>; <span class="comment">// 报错</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><p>一旦声明，就必须立即初始化；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">const a ; &#x2F;&#x2F; 报错，没有初值</span></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<p>其它与let相似的特点</p>
+<ul>
+<li>具有块级作用域</li>
+<li>没有变量提升，必须先定义再使用</li>
+<li>常量也是独立的，定义后不会压入到window对象中，不是window对象的属性</li>
+</ul>
+<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4><p><code>const</code>实际上保证的，并不是常量的值不得改动，而是<code>常量指向的那个内存地址所存的数据不得改动</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;<span class="attr">a</span>:<span class="number">1</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">obj.a = <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj); <span class="comment">// 问题：obj对象的属性值a是否修改了。</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><p>对于简单类型的数据（数值、字符串、布尔值），它的值直接保存在栈区。就保存在常量名指向的那个内存地址中，因此等同于常量值。</p>
+</li>
+<li><p>对于复合类型的数据（如对象和数组），常量指向的内存地址，保存的只是一个指向实际数据的指针，<code>const</code>只能保证这个指针是固定的（即总是指向一个固定的地址），至于它指向的数据结构是不是可变的，就不能控制了。因此，<code>将一个对象声明为常量必须非常小心,它的属性是可以修改的</code>。</p>
+<p><img src="01-ES6.assets/1565617743806.png" alt="1565617743806"></p>
+</li>
+</ul>
+<p>如果你真的希望定义一个不能修改的对象（属性不能添加，修改，删除），你可以使用Object.freeze()。下面是一段参考代码：它一个可以把一个对象全部冻结的函数:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">makeConst</span>(<span class="params">obj</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	<span class="built_in">Object</span>.freeze(obj);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	<span class="built_in">Object</span>.keys(obj).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		<span class="keyword">if</span>(<span class="keyword">typeof</span> obj[key] === <span class="string">'object'</span>)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">			makeConst(obj[key])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">makeConst(obj);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">obj.a = <span class="number">200</span>; <span class="comment">//不报错，但是不生效</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">obj.c = <span class="number">100</span>; <span class="comment">//不报错，但是不生效</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj); <span class="comment">//值保持不变</span></span></pre></td></tr></table></figure>
+
+
+
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><table>
+<thead>
+<tr>
+<th align="center">关键字</th>
+<th align="center">变量提升</th>
+<th align="center">块级作用域</th>
+<th align="center">初始值</th>
+<th align="center">更改值</th>
+<th align="center">通过window调用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">let</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">const</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">var</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<p>实践过程中：let Or var.</p>
+<p>在写项目时，这两种情况都有用到。如果你项目小组可以使用let，就请你彻底和var分手。</p>
+<p>推荐优先级：</p>
+<p>​    const &gt; let &gt; var</p>
+<h2 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h2><p>我们经常会遇到一个场景：从对象中取出它的属性值，并保存在一个变量中。</p>
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 这里的item是一个对象&#123; &#125;，其中包含属性name和age</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">let name &#x3D; item.name; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let age &#x3D; item.age;</span></pre></td></tr></table></figure>
+
+<p>另外，如ajax请求的回调函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; 省略其它参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	success:function(res)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&#x2F;&#x2F; 这里的res是一个对象，其中有code属性和data属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		if(res.code &#x3D;&#x3D;&#x3D; 200)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">			let data &#x3D; res.data;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">			data.forEach()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
+
+<p>ES6提供了一个更加方便的方式从对象中取出属性值来，这就解构赋值。</p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>ES 6 允许按照一定<strong>模式</strong>，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。</p>
+<p>它有两个动作：</p>
+<pre><code>- 解构：意思是把有结构的数据分解开成为一个一个的值
+- 赋值：把解构之后的值保存到变量</code></pre><p>基本示例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 需求，快速地从数组中取出值来赋值给变量a,b,c,d</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = arr[<span class="number">0</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> c = arr[<span class="number">1</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a,b,c,d)</span></pre></td></tr></table></figure>
+
+
+
+<h3 id="数组的解构赋值"><a href="#数组的解构赋值" class="headerlink" title="数组的解构赋值"></a>数组的解构赋值</h3><p>它能够快速从数组中取出值保存到变量中。它的本质是给变量赋值。</p>
+<p>内容：</p>
+<ul>
+<li>语法格式及解构规则</li>
+<li>常规使用:变量个数等于数组长值</li>
+<li>非常规使用<ul>
+<li>变量个数大于数组长度</li>
+<li>变量个数小于数组长度</li>
+</ul>
+</li>
+<li>高级使用<ul>
+<li>用空跳过不需要的值</li>
+<li>剩余值</li>
+<li>复杂嵌套场景</li>
+</ul>
+</li>
+<li>小面试题</li>
+</ul>
+<h4 id="语法格式及解构规则"><a href="#语法格式及解构规则" class="headerlink" title="语法格式及解构规则"></a>语法格式及解构规则</h4><p>格式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [变量<span class="number">1</span>=默认值<span class="number">1</span>，变量<span class="number">2</span>=默认值<span class="number">2</span>，省略其它，变量n=默认值n ] = [数组元素<span class="number">1</span>，数组元素<span class="number">2</span>,省略其它,数组元素n]</span></pre></td></tr></table></figure>
+
+<p>默认值是可选的：可以设置，也可以不设置；</p>
+<p>规则：</p>
+<ul>
+<li>赋值符号左右两边都是数组，把右边的数组按下标从小到大取出来，放入左边的数组中。</li>
+<li>如果左边的变量并没有分配到某一个值：<ul>
+<li>有默认值，使用其默认值。</li>
+<li>无默认值，其值是undefined</li>
+</ul>
+</li>
+</ul>
+<h4 id="基本示例"><a href="#基本示例" class="headerlink" title="基本示例"></a>基本示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//最简单的场景： 变量个数和数组中元素的是相等的</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">5</span>, <span class="number">9</span>, <span class="number">10</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = arr;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a, b, c); <span class="comment">// 输出 5 9 10</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 等价于：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = arr[<span class="number">0</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> b = arr[<span class="number">1</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> c = arr[<span class="number">2</span>];</span></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li>​    “=”左右两边的格式要统一。</li>
+</ul>
+<h4 id="闯关练习"><a href="#闯关练习" class="headerlink" title="闯关练习"></a>闯关练习</h4><p>我们可以通过如下练习来掌握数组的解构赋值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 变量多，值少</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [5, 9, 10];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let [a, b, c, d] &#x3D; arr;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">console.log(a, b, c, d); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 结论：没有匹配上的值是undefined</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 默认值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [5, 9];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">let [a, b, c, d&#x3D;4] &#x3D; arr;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">console.log(a, b, c, d); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 结论：对于没有匹配上的变量，有默认值就使用默认值，否则就是 undefined，</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 变量少，值多</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [5, 9, 10, 8, 3, 2];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">let [a, b] &#x3D; arr;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">console.log(a, b); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 结论：多余的忽略</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 用空跳过不需要的值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [5, 9, 10, 8, 3, 2];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">let [, , a, , b] &#x3D; arr; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">console.log(a, b); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 结论：不需要用变量接收的值，用空位占位</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 复杂的场景，只要符合模式，即可解构</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [&#39;zhangsan&#39;, 18, [&#39;175cm&#39;, &#39;65kg&#39;]];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 如何让a的值是175cm,b的值是65kg</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">console.log(a, b); &#x2F;&#x2F; 175cm 65kg</span></pre></td></tr></table></figure>
+
+
+
+<h4 id="剩余值"><a href="#剩余值" class="headerlink" title="剩余值"></a>剩余值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">5</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">8</span>, <span class="number">3</span>, <span class="number">2</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, ...c] = arr; <span class="comment">// ...c 接收剩余的其他值，得到的c是一个数组</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a, b, c); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 结果：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// a = 5, </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// b = 9, </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// c = [10, 8, 3, 2]</span></span></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ol>
+<li>…  只能用在最后一个变量上。</li>
+<li>这个变量是一个数组，在解构赋值的过程中，如果有出现数组元素个数大于变量个数的情况，它将会把多余的参数起来，保存在这个数组，如果收集不到多余的，它就是一个空数组。</li>
+</ol>
+<h4 id="一个小面试题"><a href="#一个小面试题" class="headerlink" title="一个小面试题"></a>一个小面试题</h4><p>交换两个变量的值？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>, b = <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 写代码,实现互换a,b的值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// ???? </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.info(a,b); <span class="comment">// 要求输出 2, 1</span></span></pre></td></tr></table></figure>
+
+
+
+<h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>作用：快速从对象中获取值(属性值)保存到变量中。它的本质是给变量赋值。</p>
+<h4 id="使用格式及规则"><a href="#使用格式及规则" class="headerlink" title="使用格式及规则"></a>使用格式及规则</h4><p><code>完整格式</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;<span class="string">"属性名1"</span>：变量名<span class="number">1</span>=默认值<span class="number">1</span>, <span class="string">"属性名2"</span>：变量名<span class="number">2</span>=默认值<span class="number">2</span>,... &#125; = &#123;<span class="string">"属性名1"</span>：属性值<span class="number">1</span>,<span class="string">"属性名2"</span>：属性值<span class="number">2</span>,...&#125;</span></pre></td></tr></table></figure>
+
+<p>默认值是可选的。你可以指定默认值，也可以不指定。</p>
+<p>解析规则：对于左边的变量名</p>
+<ul>
+<li><p>如果在右边的对象中能找出与左边属性名相同的项，则把右边的属性值赋值给左边的变量名。</p>
+</li>
+<li><p>如果找不到，则看是否有使用默认值，有默认值就使用默认值，没有就是undefined。</p>
+</li>
+</ul>
+<p><code>精简格式</code></p>
+<p>如果左侧对象中属性名与变量名相同，则可左侧合并：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;变量名<span class="number">1</span>=默认值<span class="number">1</span>，变量名<span class="number">2</span>=默认值<span class="number">2</span>&#125; = &#123;<span class="string">"属性名1"</span>：属性值<span class="number">1</span>,<span class="string">"属性名2"</span>：属性值<span class="number">2</span>,...&#125;</span></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4><p>场景1，变量名和属性名一样</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 场景1，默认要求变量名和属性名一样</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; name, age &#125; = &#123;<span class="attr">age</span>: <span class="number">27</span>, <span class="attr">name</span>: <span class="string">'阳明'</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(name, age); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;a, c&#125; = &#123;<span class="attr">a</span>: <span class="string">'hello'</span>, <span class="attr">b</span>: <span class="string">'world'</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a, c); <span class="comment">// hello, undefined</span></span></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li>“=” 左右两边的格式一致。</li>
+<li>对象是属性的无序集合，所以不需要管顺序</li>
+</ul>
+<p>场景2，变量改名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 场景2，可以通过:为变量改名</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;b, <span class="attr">name</span>:a&#125; = &#123;<span class="attr">name</span>: <span class="string">'王阳明'</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(b, a,name);</span></pre></td></tr></table></figure>
+
+<h5 id="闯关练习-1"><a href="#闯关练习-1" class="headerlink" title="闯关练习"></a>闯关练习</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 默认值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var &#123;b&#x3D;1, name:a,age:b&#x3D;1 &#125; &#x3D; &#123;name: &#39;王阳明&#39;&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">console.log(b, a,name); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 复杂的嵌套，只要符合模式，即可解构</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">let obj &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    name: &#39;zhangsan&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    age: 22,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    dog: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        name: &#39;毛毛&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        age: 3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 如何才能把age和name解析出来</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">let &#123;dog: &#123;name, age&#125;&#125; &#x3D; obj;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">console.log(name, age); &#x2F;&#x2F; 毛毛 3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 假设从服务器上获取的数据如下</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">let res &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    data: [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">    meta: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">        code: 200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">        msg: &#39;获取数据成功&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 如何获取到 code 和 msg</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">let &#123; meta: &#123; code, msg &#125; &#125; &#x3D; res;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">console.log(code, msg); &#x2F;&#x2F; 200, 获取数据成功</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">let &#123;max,min,PI&#125; &#x3D; Math;</span></pre></td></tr></table></figure>
+
+
+
+<h4 id="剩余值-1"><a href="#剩余值-1" class="headerlink" title="剩余值"></a>剩余值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 把其它的属性全收集起来</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">name</span>:<span class="string">'zs'</span>, <span class="attr">age</span>:<span class="number">20</span>, <span class="attr">gender</span>:<span class="string">'男'</span>&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;name, ...a&#125; = obj;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(name, a);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 结果：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// name = zs</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// a = &#123;age: 20, gender: "男"&#125;;</span></span></pre></td></tr></table></figure>
+
+
+
+<h2 id="函数的拓展"><a href="#函数的拓展" class="headerlink" title="函数的拓展"></a>函数的拓展</h2><p>es6对函数的功能进行了一些拓展，补充了很多功能。学习这个部分的内容我们就可以更加灵活优雅地使用函数啦。</p>
+<h3 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h3><p>在定义一个函数时，我们可以给形参设置默认值：当用户不填入这个值时，我们有一个保底的值可以使用。这个特性在很多其它的编程语言中一个基础的特性，而在ES6之前，是不支持的，我们需要通过一些变通的方式来实现。</p>
+<h4 id="理解默认值"><a href="#理解默认值" class="headerlink" title="理解默认值"></a>理解默认值</h4><p>参数的默认值在之前的课程内容已经涉及，例如在<code>xhr.open(type,url,是否异步)</code>方法中，第3个参数默认是true，即表示异步ajax。</p>
+<p>默认值的意思是：</p>
+<ul>
+<li>如果传入，就用你传的值</li>
+<li>如果不传入，就使用某一个特殊的、事先定义好的值。这个值也就是默认值。</li>
+</ul>
+<h4 id="ES5的实现"><a href="#ES5的实现" class="headerlink" title="ES5的实现"></a>ES5的实现</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5 中给参数设置默认值的变通做法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">open</span>(<span class="params">type, url,isAsync</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span>(isAsync === <span class="literal">undefined</span>)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        isAsync = <span class="literal">true</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(type, url, isAsync);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下面这两句是等价的</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">open(<span class="string">"get"</span>,<span class="string">"common/get"</span>)；<span class="comment">// </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">open(<span class="string">"get"</span>,<span class="string">"common/get"</span>,<span class="literal">true</span>)；</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">open(<span class="string">"get"</span>,<span class="string">"common/get"</span>,<span class="literal">false</span>)；</span></pre></td></tr></table></figure>
+
+<p>以上代码主要是利用形参的一个特点：没有赋值的话，其默认值是undefined。代码是可以工作的，但是显得很累赘，es6提供了更简单的实现。</p>
+<h4 id="ES6的实现"><a href="#ES6的实现" class="headerlink" title="ES6的实现"></a>ES6的实现</h4><h5 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h5><p>在定义一个函数时，在形参列表中对参数进行赋值操作。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params">参数名<span class="number">1</span>=<span class="string">'默认值1'</span>，参数名<span class="number">2</span>=<span class="string">'默认值2'</span>，参数名<span class="number">3</span>=<span class="string">'默认值3'</span></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">function open(type, url,isAsync&#x3D;true) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    console.log(type, url, isAsync);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 下面这两句是等价的</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">open(&quot;get&quot;,&quot;common&#x2F;get&quot;)；&#x2F;&#x2F; 第三个参数使用默认值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">open(&quot;get&quot;,&quot;common&#x2F;get&quot;,true);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">open(&quot;get&quot;,&quot;common&#x2F;get&quot;,false);</span></pre></td></tr></table></figure>
+
+<p>思考：能否跳过isAsync,url，而只给type设置默认值？</p>
+<p>注意:</p>
+<ul>
+<li>带默认值的形参放在形参列表的<strong>最右边</strong>。</li>
+</ul>
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">a=<span class="number">1</span>,b=<span class="number">2</span></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	<span class="built_in">console</span>.log(a,b,a+b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">f(<span class="number">10</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">f(<span class="number">10</span>,<span class="number">20</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">f()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params">a=<span class="number">1</span>,b</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	<span class="built_in">console</span>.log(a,b,a+b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">f2(<span class="number">10</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">f2(<span class="number">10</span>,<span class="number">20</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">f2(,<span class="number">3</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">f2()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 与解构赋值一起使用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params">&#123;a=<span class="number">1</span>,b=<span class="number">2</span>&#125;=&#123;&#125;</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">   <span class="built_in">console</span>.log(a,b,a+b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">f1(&#123;<span class="attr">a</span>:<span class="number">10</span>,<span class="attr">b</span>:<span class="number">20</span>&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">f1(&#123;<span class="attr">a</span>:<span class="number">20</span>&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">f1(&#123;<span class="attr">c</span>:<span class="number">1</span>&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">f1()</span></pre></td></tr></table></figure>
+
+
+
+<h3 id="rest-参数"><a href="#rest-参数" class="headerlink" title="rest 参数"></a>rest 参数</h3><p>rest （其它的，剩余的）参数 用于获取函数多余参数，并把它们放在一个数组中。</p>
+<h4 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h4><p>在定义函数时，在<code>最后一个参数</code>前面加上<code>...</code>， 则这个参数就是剩余参数；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn = <span class="function"><span class="keyword">function</span>(<span class="params">参数<span class="number">1</span>，参数<span class="number">2</span>，...rest参数</span>)</span>&#123;&#125;</span></pre></td></tr></table></figure>
+
+<p>只是在定义函数时，在形参列表中区别一下，而在<strong>调用函数时并无区别</strong>。</p>
+<h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4><p>回答如下问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span> (<span class="params">x,...y</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(x,y)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">f2(<span class="number">1</span>,<span class="number">2</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">f2(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span> (<span class="params">x,y</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(x,y)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">f1(<span class="number">1</span>,<span class="number">2</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">f1(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span></pre></td></tr></table></figure>
+
+<h4 id="应用–代替arguments"><a href="#应用–代替arguments" class="headerlink" title="应用–代替arguments"></a>应用–代替arguments</h4><p>问题：编写一个函数，求所有参数之和；</p>
+<p>方法一：arguments</p>
+<p>方法二：rest参数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSum</span> (<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">//  在这里写你的代码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> sum = <span class="number">0</span> ; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.info( arguemnts[i])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        sum += <span class="built_in">arguments</span>[i];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p>如果以箭头函数 的方式去定义这个函数，则内部不可以使用arguments这个对象了。此时，我们就可以使用</p>
+<p>rest 参数，它可以替代 arguments 的使用。 代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 参数很多，不确定多少个，可以使用剩余参数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span>  getSum = <span class="function">(<span class="params">...values</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> sum = <span class="number">0</span> ; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; values.length; i++)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.info( values[i])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        sum += values[i];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 调用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(fn(<span class="number">6</span>, <span class="number">1</span>, <span class="number">100</span>, <span class="number">9</span>, <span class="number">10</span>));</span></pre></td></tr></table></figure>
+
+<p>与arguments相比，它是一个真正的数组，可以使用全部的数组的方法。</p>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><p>箭头函数能让代码更简洁；箭头函数能让函数的功能更加纯粹；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn3 = <span class="function"><span class="params">x</span> =&gt;</span> x * <span class="number">2</span>;</span></pre></td></tr></table></figure>
+
+
+
+<h4 id="什么是箭头函数"><a href="#什么是箭头函数" class="headerlink" title="什么是箭头函数"></a>什么是箭头函数</h4><p>ES6 中允许使用箭头函数的方式来定义一个函数。前面学习的定义一个函数有两种方式:</p>
+<ol>
+<li>函数声明式</li>
+<li>函数表达式</li>
+</ol>
+<p>现在有了一个新的方式：</p>
+<p>​    3. 箭头函数</p>
+<h4 id="格式-1"><a href="#格式-1" class="headerlink" title="格式"></a>格式</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 函数名 = （形参<span class="number">1</span>，...形参n）=&gt;&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 函数体</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+
+
+<h4 id="定义一个箭头函数"><a href="#定义一个箭头函数" class="headerlink" title="定义一个箭头函数"></a>定义一个箭头函数</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 函数声明式</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fu1</span>(<span class="params">x</span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> x * <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2. 函数表达式</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn2 = <span class="function"><span class="keyword">function</span> (<span class="params">x</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> x * <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 3. 箭头函数</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn3 = <span class="function">(<span class="params">x</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> x * <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p>第一眼看到这个箭头函数时，会觉得很奇怪。如果从函数表达式的格式出发， 经过如下<code>2步演化</code>步骤就可以得到。</p>
+<ol>
+<li>把function 关键字 后移动到 （）和  {} 中间</li>
+<li>把function 改写成 =&gt;</li>
+</ol>
+<p>注意：</p>
+<pre><code>- `=&gt;`是一个整体，不要加空格
+- 箭头函数只在定义上有些区别，但在函数调用格式上，是没有区别的。</code></pre><h4 id="简化写法"><a href="#简化写法" class="headerlink" title="简化写法"></a>简化写法</h4><ul>
+<li><p>当形参有且只有一个，可以省略小括号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; (x) &#x3D;&gt; &#123;console.log(x)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 可以简化成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; &#123;console.log(x)&#125;</span></pre></td></tr></table></figure>
+</li>
+<li><p>当函数体只有一条语句，可以省略大括号;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; &#123;console.log(x)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 可以简化成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; console.log(x)</span></pre></td></tr></table></figure>
+</li>
+<li><p>当函数体只有一条语句，并且就是return语句，则可以省略return和大括号。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; &#123;return x*2 &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 可以简化成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; x*2</span></pre></td></tr></table></figure>
+
+<p>注意如果返回值是一个对象，要加()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; &#123;return &#123;a:1&#125;  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 可以简化成：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt; &#123;a:1&#125; &#x2F;&#x2F; 报错</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">let f &#x3D; x &#x3D;&gt;(&#123;a:1&#125;)</span></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h4 id="箭头函数与普通函数的区别"><a href="#箭头函数与普通函数的区别" class="headerlink" title="箭头函数与普通函数的区别"></a>箭头函数与普通函数的区别</h4><ul>
+<li>内部没有arguments</li>
+<li>内部没有this</li>
+<li>不能作为构造器</li>
+</ul>
+<h5 id="没有-arguments"><a href="#没有-arguments" class="headerlink" title="没有 arguments"></a>没有 arguments</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn = <span class="function">(<span class="params">a,b</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>); <span class="comment">// 报错，arguments is not defined</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">fn(<span class="number">1</span>, <span class="number">2</span>);</span></pre></td></tr></table></figure>
+
+<h5 id="内部的this对象，指向定义时所在的对象，而不是使用时所在的对象。"><a href="#内部的this对象，指向定义时所在的对象，而不是使用时所在的对象。" class="headerlink" title="内部的this对象，指向定义时所在的对象，而不是使用时所在的对象。"></a>内部的<code>this</code>对象，指向定义时所在的对象，而不是使用时所在的对象。</h5><p>1.箭头函数可以访问this对象，但这个this对象指向在定义箭头函数时它时所处的对象(宿主对象),而不是运行时的对象。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">'lisi'</span>; <span class="comment">// 测试时，这里必须用var，因为用let声明的变量不能使用window调用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    name: <span class="string">'zhangsan'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    f1 : <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// window对象</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name); <span class="comment">// lisi</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    f2 : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// obj</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name); <span class="comment">// zhangsan</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    f2 : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">// obj</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name); <span class="comment">// zhangsan</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">obj.f1();</span></pre></td></tr></table></figure>
+
+<p>箭头函数中的this指向是<strong>固定化</strong>的，并不是因为箭头函数内部有绑定this的机制，实际原因是箭头函数根本没有自己的this，导致内部的this就是外层代码块的this。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var obj &#x3D; &#123;&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var f1 &#x3D; functoin()&#123;console.log(this)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">var f2 &#x3D; ()&#x3D;&gt;&#123;console.log(this)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">f1();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">f1.call(obj)&#x2F;&#x2F; call可以修改普通函数内部的this的值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">f2();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">f2.call(obj);&#x2F;&#x2F; call并不能修改箭头函数内部的this的值</span></pre></td></tr></table></figure>
+
+<h5 id="箭头函数不能作为构造函数"><a href="#箭头函数不能作为构造函数" class="headerlink" title="箭头函数不能作为构造函数"></a>箭头函数不能作为构造函数</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> Person = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = <span class="keyword">new</span> Person(); <span class="comment">// 报错，Person is not a constructor</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 换个角度理解，箭头函数中都没有自己的this，怎么处理成员，所以不能当构造函数</span></span></pre></td></tr></table></figure>
+
+<p>在javascript中，函数是一等公民 ,它除了起到最基本的提炼代码之外，还可以当做构造器来使用，它能做的事件太多了。在ES6提出的箭头函数给函数减负了。</p>
+<h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><p>（1）优先级：</p>
+<p>​    箭头&gt; 表达式 &gt; 声明式</p>
+<p>（2）如果在函数的内部涉及this的使用，则要特别小心this。（如果函数的内部没有this，则可以放心使用箭头函数）</p>
+<h2 id="数组的扩展"><a href="#数组的扩展" class="headerlink" title="数组的扩展"></a>数组的扩展</h2><p>数组对象是js中非常重要的对象，它本身提供了非常多的方法，例如：sort，push，pop，unshift, splice,concat，map,forEach,filter,some,…. 。由于前端的主要工作内容之一是与后端进行数据交互，而数据交互的载体大多是数组，所以我们对数组的操作要求也非常高。</p>
+<p>曾经有一道面试题：写出10个你用过的与数组相关的方法。</p>
+<p>这一小节的学习会让我们多掌握几个数组的方法。</p>
+<h3 id="扩展运算符"><a href="#扩展运算符" class="headerlink" title="扩展运算符"></a>扩展运算符</h3><p>功能：它的作用是把数组中的元素一项项地展开：把一个整体的数组拆开成单个的元素。</p>
+<p>格式：<code>...数组</code></p>
+<p>基本用法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.info(...[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);</span></pre></td></tr></table></figure>
+
+<p>应用1：数组拷贝</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var arr1 &#x3D; [1,2,3]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var arr2 &#x3D; [...arr1]</span></pre></td></tr></table></figure>
+
+<p>应用2： 数组合并</p>
+<p>从把一个数组中的值全取出来，放在另一个数组中的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr0 = [<span class="string">'a'</span>,<span class="string">'b'</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">4</span>, ...arr1];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr3 = [..arr0 ,...arr1];</span></pre></td></tr></table></figure>
+
+<p>应用3：Math.max()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max(<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max(...arr);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 或者 Math.max.apply(this,[1,2,3,566])</span></span></pre></td></tr></table></figure>
+
+<h3 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()</h3><p>功能：把其它非数组的对象转成数组。</p>
+<p>格式： <code>数组 = Array.from(非数组对象)</code></p>
+<p>它的实参有三种情况：</p>
+<ol>
+<li>自定义的，特殊格式的对象。</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fakeArr = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="number">0</span>: <span class="string">'a'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="number">1</span>: <span class="string">'b'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="number">2</span>: <span class="string">'c'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  length: <span class="number">3</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p>就是为了演示，并无实际应用价值。</p>
+<ol start="2">
+<li>arguments对象</li>
+<li>DOM 操作返回的 NodeList 集合</li>
+</ol>
+<h3 id="find方法"><a href="#find方法" class="headerlink" title="find方法"></a>find方法</h3><p>在实际的开发中，我们经常会遇到一种场景：从一个数组中找出符合条件的元素。我们要的讨论的重点是如何从数组中找出符合条件的元素，当然，我们可以通过手写循环的方式来实现这个功能，但是现在es6中提供了现成的功能。find/findIndex</p>
+<p>作用：从数组中找出我们符合条件的<strong>第一个元素</strong>（或者是下标）。</p>
+<h4 id="格式-2"><a href="#格式-2" class="headerlink" title="格式"></a>格式</h4><p>find和findIndex的格式是一致的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> result = 数组.find(<span class="function"><span class="keyword">function</span>(<span class="params">item,index,self</span>)</span>&#123; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">//.... </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 如果满足查找的条件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
+
+<ul>
+<li>回调函数有三个参数，分别表示：数组元素的值、索引及整个数组</li>
+<li>如果某次循环返回的是true，find和findIndex方法的返回值就是满足这个条件的第一个元素或索引</li>
+</ul>
+<h4 id="执行流程"><a href="#执行流程" class="headerlink" title="执行流程"></a>执行流程</h4><ul>
+<li><p>find和findIndex方法，会遍历传递进来的数组</p>
+</li>
+<li><p>如果在回调函数体内，某个时刻return true，则表示查找过程结果，返回值就是本轮循环中的元素（或者是下标）；如果全部的循环结束，也没有return true，则表示没有找到，没有找到会返回undefined。</p>
+</li>
+<li><p><strong>findIndex</strong> 找到数组中第一个满足条件的成员并<strong>返回该成员的索引</strong>，如果找不到返回 <strong>-1</strong>。</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">0</span>, <span class="number">-4</span>, <span class="number">3</span>, <span class="number">-2</span>, <span class="number">9</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">arr.find(<span class="function"><span class="keyword">function</span> (<span class="params">item, index, self</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(item); <span class="comment">// 数组中的每个值</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(index); <span class="comment">// 数组中的每个索引/下标</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(self); <span class="comment">// 当前的数组</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h4 id="简单示例"><a href="#简单示例" class="headerlink" title="简单示例"></a>简单示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用法：找数组中第一个小于0的数字</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">0</span>, <span class="number">-4</span>, <span class="number">3</span>, <span class="number">-2</span>, <span class="number">9</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> result = arr.find(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> item &lt; <span class="number">0</span>; <span class="comment">//遍历过程中，根据这个条件去查找</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// -4</span></span></pre></td></tr></table></figure>
+
+<p>注意通过箭头函数来简化代码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 用法：找数组中第一个小于0的数字</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [1, 2, 4, 0, -4, 3, -2, 9];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">let result &#x3D; arr.find(item &#x3D;&gt; item &lt; 0);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">console.log(result); &#x2F;&#x2F; -4</span></pre></td></tr></table></figure>
+
+
+
+<h4 id="实践应用"><a href="#实践应用" class="headerlink" title="实践应用"></a>实践应用</h4><p>从一个复杂的对象数组中找出符合条件的对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data = [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &#123;<span class="attr">id</span>:<span class="number">2</span>,<span class="attr">name</span>:<span class="string">'严嵩'</span>,<span class="attr">age</span>:<span class="number">15</span>&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    &#123;<span class="attr">id</span>:<span class="number">3</span>,<span class="attr">name</span>:<span class="string">'徐阶'</span>,<span class="attr">age</span>:<span class="number">17</span>&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    &#123;<span class="attr">id</span>:<span class="number">4</span>,<span class="attr">name</span>:<span class="string">'高拱'</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#123;<span class="attr">id</span>:<span class="number">1</span>,<span class="attr">name</span>:<span class="string">'张居正'</span>,<span class="attr">age</span>:<span class="number">12</span>&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">]</span></pre></td></tr></table></figure>
+
+
+
+<h3 id="findIndex"><a href="#findIndex" class="headerlink" title="findIndex"></a>findIndex</h3><p>findIndex 的使用和 find 类似，只不过它查找的不是数组中的元素，而是元素的下标。</p>
+<h3 id="includes"><a href="#includes" class="headerlink" title="includes()"></a>includes()</h3><p>功能：判断数组是否包含某个值，返回 true / false</p>
+<p>格式：<code>数组.includes(参数1，参数2)</code></p>
+<ul>
+<li>参数1，必须，表示查找的内容</li>
+<li>参数2，可选，表示开始查找的位置，0表示从第一个元素开始找。默认值是0。</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">9</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(arr.includes(<span class="number">4</span>)); <span class="comment">// true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(arr.includes(<span class="number">4</span>, <span class="number">2</span>)); <span class="comment">// false， 从2的位置开始查，所以没有找到4</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(arr.includes(<span class="number">5</span>)); <span class="comment">// false</span></span></pre></td></tr></table></figure>
+
+<h2 id="String的扩展"><a href="#String的扩展" class="headerlink" title="String的扩展"></a>String的扩展</h2><p>es6中对字符串提供了新的特性，我们介绍其中几个方法：</p>
+<ul>
+<li>模板字符串</li>
+<li>includes</li>
+<li>startsWith</li>
+<li>endWith</li>
+<li>repeat</li>
+</ul>
+<h3 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h3><p>在做字符串拼接时，使用<code>+</code>来拼接复杂内容是很麻烦的，而模板字符串可以解决这个问题。</p>
+<p>格式：`<code>${变量}</code> <code>${表达式}</code>` </p>
+<p>语法：</p>
+<ul>
+<li>模板字 符串使用反引号 <strong>`</strong> 把内容括起来，类似于普通字符串的””。</li>
+<li>${}充当界定符的作用，其中可以写变量名，表达式等。</li>
+<li>允许字符串内部进行换行，代码有更好的阅读体验</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'zs'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> age = <span class="number">18</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 拼接多个变量，在模板字符串中使用占位的方式，更易懂</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">`我是<span class="subst">$&#123;name&#125;</span>，今年<span class="subst">$&#123;age&#125;</span>`</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = [&#123;<span class="attr">name</span>: <span class="string">'flex'</span>, <span class="attr">age</span>: <span class="number">20</span>&#125;,&#123;<span class="attr">name</span>: <span class="string">'james'</span>, <span class="attr">age</span>: <span class="number">21</span>&#125;];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">'175cm'</span>, <span class="string">'60kg'</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 内容过多可以直接换行</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> html = <span class="string">`</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="string">	&lt;div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="string">		&lt;ul&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="string">			&lt;li&gt;<span class="subst">$&#123;obj.name&#125;</span>&lt;/li&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="string">			&lt;li&gt;<span class="subst">$&#123;obj.age&#125;</span>&lt;/li&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="string">			&lt;li&gt;<span class="subst">$&#123;arr[<span class="number">0</span>]&#125;</span>&lt;/li&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="string">			&lt;li&gt;<span class="subst">$&#123;arr[<span class="number">1</span>]&#125;</span>&lt;/li&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"><span class="string">		&lt;/ul&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="string">	&lt;/div&gt;</span></span></pre></td></tr></table></figure>
+
+<h3 id="includes-1"><a href="#includes-1" class="headerlink" title="includes()"></a>includes()</h3><ul>
+<li>格式：<code>str.includes(searchString, [position])</code>        </li>
+<li>功能：返回布尔值，表示是否找到了参数字符串<ul>
+<li>position: 从当前字符串的哪个索引位置开始搜寻子字符串，默认值为0。</li>
+</ul>
+</li>
+</ul>
+<h3 id="startsWith"><a href="#startsWith" class="headerlink" title="startsWith()"></a>startsWith()</h3><ul>
+<li>格式：<code>str.startsWidth(searchString, [position])</code>         </li>
+<li>功能：返回布尔值，表示参数字符串是否在原字符串的头部或指定位置<ul>
+<li>position: 在 <code>str</code> 中搜索 <code>searchString</code> 的开始位置，默认值为 0，也就是真正的字符串开头处。</li>
+</ul>
+</li>
+</ul>
+<h3 id="endsWith"><a href="#endsWith" class="headerlink" title="endsWith()"></a>endsWith()</h3><ul>
+<li>格式：<code>str.endsWith(searchString, [len])</code>            </li>
+<li>功能：返回布尔值，表示参数字符串是否在原字符串的尾部或指定位置.<ul>
+<li>len:可选。作为 <code>str</code> 的长度。默认值为 <code>str.length</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="repeat"><a href="#repeat" class="headerlink" title="repeat()"></a>repeat()</h3><p><code>repeat</code>方法返回一个新字符串，表示将原字符串重复<code>n</code>次。</p>
+<p>语法:<code>str.repeat(n)</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> html = <span class="string">'&lt;li&gt;itheima&lt;/li&gt;'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">html = html.repeat(<span class="number">10</span>);</span></pre></td></tr></table></figure>
+
+<h2 id="Set对象"><a href="#Set对象" class="headerlink" title="Set对象"></a>Set对象</h2><p>Set是集合的意思。是ES6 中新增的内置对象，它类似于数组，但是<code>成员的值都是唯一的，即没有重复的值</code>。使用它可以方便地实现用它就可以实现数组去重的操作。</p>
+<h3 id="创建set对象"><a href="#创建set对象" class="headerlink" title="创建set对象"></a>创建set对象</h3><ul>
+<li><p>创建空set；</p>
+</li>
+<li><p>根据已有数组创建set</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 基本使用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="keyword">set</span> = new Set();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">// 得到一个空的Set对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">let <span class="keyword">set</span> = new Set([1,2,3])</span></pre></td></tr></table></figure>
+
+
+
+<h3 id="Set-的成员方法"><a href="#Set-的成员方法" class="headerlink" title="Set 的成员方法"></a>Set 的成员方法</h3><ul>
+<li><code>size</code>：属性，获取 <code>set</code> 中成员的个数，相当于数组中的 <code>length</code></li>
+<li><code>add(value)</code>：添加某个值，返回 Set 结构本身。</li>
+<li><code>delete(value)</code>：删除某个值，返回一个布尔值，表示删除是否成功。</li>
+<li><code>has(value)</code>：返回一个布尔值，表示该值是否为<code>Set</code>的成员。</li>
+<li><code>clear()</code>：清除所有成员，没有返回值。</li>
+<li><code>forEach</code>:遍历</li>
+</ul>
+<h3 id="应用-数组去重"><a href="#应用-数组去重" class="headerlink" title="应用-数组去重"></a>应用-数组去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.info([...new <span class="built_in">Set</span>(arr)])</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="定义对象的简洁方式"><a href="#定义对象的简洁方式" class="headerlink" title="定义对象的简洁方式"></a>定义对象的简洁方式</h2><ul>
+<li><p>对属性名的简化</p>
+<p>如果对象的属性值是一个变量的值，而恰好对象的属性名与这个变量的名一致，则可以简写。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">function f()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	var content &#x3D; &quot;abc&quot;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	return &#123;&quot;content&quot;:content&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; 简写为</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	return &#123;content&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+</li>
+<li><p>对方法的简化</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'zhangsan'</span>, age = <span class="number">20</span>, gender = <span class="string">'女'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    name: name, <span class="comment">// 原来的写法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    age, <span class="comment">// 对象属性和变量名相同，可以省略后面的 “:age”，下面的gender同理</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    gender,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    fn1:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  <span class="comment">// 常规写法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="number">123</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    fn2 () &#123; <span class="comment">// 可以省略 </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">console</span>.log(<span class="number">456</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj.age); <span class="comment">// 20</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">obj.fn2(); <span class="comment">// 456</span></span></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h2 id="ECMAScript-6-降级处理"><a href="#ECMAScript-6-降级处理" class="headerlink" title="ECMAScript 6 降级处理"></a>ECMAScript 6 降级处理</h2><h3 id="ES-6-的兼容性问题"><a href="#ES-6-的兼容性问题" class="headerlink" title="ES 6 的兼容性问题"></a>ES 6 的兼容性问题</h3><ul>
+<li><p>ES6 (2015年10月)虽好，但是有兼容性问题，IE7-IE11 基本不支持 ES6</p>
+<p><a href="http://kangax.github.io/compat-table/es6/" target="_blank" rel="noopener">ES6 兼容性列表</a></p>
+</li>
+<li><p>在最新的现代浏览器、移动端、Node.js 中都支持 ES6</p>
+</li>
+</ul>
+<h3 id="ES-6-降级处理"><a href="#ES-6-降级处理" class="headerlink" title="ES 6 降级处理"></a>ES 6 降级处理</h3><p>因为 ES 6 有浏览器兼容性问题，可以使用一些工具进行降级（把ES6的代码转成ES5的代码），例如：<strong>babel</strong></p>
+<p><img src="01-ES6.assets/babel%E8%BD%AC%E7%A0%81.gif" alt=""></p>
+<p>babel官网](<a href="https://www.babeljs.cn/" target="_blank" rel="noopener">https://www.babeljs.cn/</a>)</p>
+<p>实时转码：<a href="https://babeljs.io/repl" target="_blank" rel="noopener">https://babeljs.io/repl</a></p>
+
+      
     </div>
-    
-</div>
-
-
-<div class="container d-none d-md-block my-navbar">
-    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
-        <a class="navbar-brand d-none" href="/">
-            
-            <img class="logo" src="https://via.placeholder.com/100x50.png?text=logo" />
-            
-        </a>
+    <footer>
+      
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                
-                <li class="nav-item pl-2 pr-2 active">
-                    <a class="nav-link" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
-                </li>
-                
-                <li class="nav-item pl-2 pr-2 active">
-                    <a class="nav-link" href="http://www.hanlindong.com" target="_blank" rel="noopener">Adagio's author</a>
-                </li>
-                
-            </ul>
-        </div>
         
-    </nav>
-</div>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
 
 
 
 
+  <article id="post-笔记" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2019-12-14T07:30:51.032Z"><a href="/2019/12/14/笔记/">2019-12-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/12/14/笔记/">笔记</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h1 id="今日内容简介"><a href="#今日内容简介" class="headerlink" title="今日内容简介"></a>今日内容简介</h1><ul>
+<li>对象的解构赋值</li>
+<li>对象的简写形式</li>
+<li>函数的新功能<ul>
+<li>函数的默认值</li>
+<li>剩余值</li>
+<li>箭头函数</li>
+</ul>
+</li>
+<li>数组的新功能、字符串的新功能、set对象的使用</li>
+<li>node介绍和使用</li>
+</ul>
+<h1 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h1><ul>
+<li>基本使用<ul>
+<li>其他使用（属性左右不对应的情况，没有找到取值默认undefined）</li>
+</ul>
+</li>
+<li>设置属性别名<ul>
+<li>let {username: un} = {username: ‘jack’};</li>
+</ul>
+</li>
+<li>设置默认值<ul>
+<li>let {username = ‘jack’} = {age : 18};</li>
+</ul>
+</li>
+<li>设置剩余值的保存<ul>
+<li>let {age, …qiTa} = {age: 21, gender: ‘女’, aiHao: ‘吃’};<ul>
+<li>qiTa的取值为 {gender: ‘女’, aiHao: ‘吃’}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="对象的简写方式"><a href="#对象的简写方式" class="headerlink" title="对象的简写方式"></a>对象的简写方式</h1><ul>
+<li><p>属性的简写</p>
+<ul>
+<li>前提：要设置的属性名需要与保存值的变量名相同</li>
+</ul>
+</li>
+<li><p>方法的简写</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> username = <span class="string">'jack'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> userAge = <span class="number">18</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  username,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  userAge,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  sayHi: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="comment">// 以前的写法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// ...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  sayHehe() &#123; <span class="comment">// 简写</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// ...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
 
 
-<div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-        <h1 class="mt-4 article-title page-title">小健博客</h1>
-        <h2 class="text-muted"><small></small></h2>
+</li>
+</ul>
+<h1 id="函数的相关操作"><a href="#函数的相关操作" class="headerlink" title="函数的相关操作"></a>函数的相关操作</h1><h2 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h2><ul>
+<li>设置方式：在函数的形参位置书写   形参名 = 默认值  的形式</li>
+<li>函数的形参也可以结合解构赋值使用</li>
+</ul>
+<h2 id="函数参数的剩余值"><a href="#函数参数的剩余值" class="headerlink" title="函数参数的剩余值"></a>函数参数的剩余值</h2><ul>
+<li>设置方式：  在某个形参前书写…， 位置为最后，用来获取剩余的所有实参</li>
+<li>比arguments好的地方：剩余值的结果是数组，不是伪数组。可以与其他参数分开获取。</li>
+</ul>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><ul>
+<li><p>作用：用来对匿名函数写法进行简化</p>
+</li>
+<li><p>设置方式:  (参数位置) =&gt; { 函数体 }</p>
+</li>
+<li><p>参数的使用：</p>
+<ul>
+<li>无参数和多于1个的参数必须加()设置参数</li>
+<li>单个参数可以不加()</li>
+<li>小结：分不清，全加即可</li>
+</ul>
+</li>
+<li><p>返回值的使用</p>
+<ul>
+<li>如果函数体中只需要设置返回值，不写=&gt;后面的{}和return</li>
+<li>其他情况全加即可</li>
+<li>小结：分不清，全加即可</li>
+</ul>
+</li>
+<li><p>箭头函数中的this问题</p>
+<ul>
+<li>箭头函数中没有单独的this，this值取决于箭头函数所在的环境</li>
+<li>如果设置匿名函数时，没用this，可以直接使用箭头函数</li>
+</ul>
+</li>
+</ul>
+<h1 id="数组的功能扩展"><a href="#数组的功能扩展" class="headerlink" title="数组的功能扩展"></a>数组的功能扩展</h1><h2 id="扩展运算符"><a href="#扩展运算符" class="headerlink" title="扩展运算符"></a>扩展运算符</h2><ul>
+<li>格式： …数组    相当于将数组展开</li>
+</ul>
+<h2 id="数组的新方法"><a href="#数组的新方法" class="headerlink" title="数组的新方法"></a>数组的新方法</h2><ul>
+<li>Array.from() 将伪数组转换为数组</li>
+<li>arr.find() 和 arr.findIndex()<ul>
+<li>findIndex()回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+</li>
+</ul>
+<h1 id="字符串的功能扩展"><a href="#字符串的功能扩展" class="headerlink" title="字符串的功能扩展"></a>字符串的功能扩展</h1><ul>
+<li>模板字符串 - 800年前讲过了，就不说了</li>
+<li>后续的方法回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+<h1 id="set对象"><a href="#set对象" class="headerlink" title="set对象"></a>set对象</h1><ul>
+<li>设置方式 new Set()</li>
+<li>特点：不会重复</li>
+<li>其他方法：回去自己查mdn学习使用方式，明天提问</li>
+</ul>
+<h1 id="ES6降级的方式"><a href="#ES6降级的方式" class="headerlink" title="ES6降级的方式"></a>ES6降级的方式</h1>
+      
     </div>
-</div>
-
-<div class="container">
-    <div class="row pt-3">
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col">
-                    
-                    <div class="row">
-    <div class="col">
-        <a href="/2020/02/06/01-ES6/" class="index-card-link">
-            <div class="card-body index-card-box">
-                <h4 class="card-title text-dark article-title">01-ES6</h4>
-                <h6 class="card-subtitle mt-2 text-muted">
-                    By 
-                    Anonymous; 
-                    Published on 2020-02-06</h6>
-                <p class="card-text text-dark mt-2 article-text">
-                    ES6ES6 介绍ES6 是什么
-ECMAScript 6，简称ES6 。是javascript语言下一代标准。它的目标是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。它是一种语言标准，6表示版本号。
-ECMA（European Computer Manufacturers Association）的第39号技术专家委员会（Technical Committ...
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-                    <hr class="row">
-                    
-                    <div class="row">
-    <div class="col">
-        <a href="/2019/12/14/%E7%AC%94%E8%AE%B0/" class="index-card-link">
-            <div class="card-body index-card-box">
-                <h4 class="card-title text-dark article-title">笔记</h4>
-                <h6 class="card-subtitle mt-2 text-muted">
-                    By 
-                    Anonymous; 
-                    Published on 2019-12-14</h6>
-                <p class="card-text text-dark mt-2 article-text">
-                    今日内容简介
-对象的解构赋值
-对象的简写形式
-函数的新功能
-函数的默认值
-剩余值
-箭头函数
-
-
-数组的新功能、字符串的新功能、set对象的使用
-node介绍和使用
-
-对象的解构赋值
-基本使用
-其他使用（属性左右不对应的情况，没有找到取值默认undefined）
-
-
-设置属性别名
-let {username: un} = {username: ‘jack’};
-
-
-设置默认值
-let {use...
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-                    <hr class="row">
-                    
-                    <div class="row">
-    <div class="col">
-        <a href="/2019/12/14/%E5%B8%B8%E7%94%A8%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88/" class="index-card-link">
-            <div class="card-body index-card-box">
-                <h4 class="card-title text-dark article-title">常用数组方法集合</h4>
-                <h6 class="card-subtitle mt-2 text-muted">
-                    By 
-                    Anonymous; 
-                    Published on 2019-12-14</h6>
-                <p class="card-text text-dark mt-2 article-text">
-                    MDN         前端字典数组有哪些方法？至少列出15个arr.from()    从类数组对象或者可迭代对象中创建一个新的数组实例arr.isArray()    判断是否是一个数组对象arr.of()    根据一组数组来创建新的数组实例，支持任意的参数数量和类型。arr.fill()    将数组中指定区间的所有元素的值，都替换成某个固定的值arr.pop()    删除数组的最...
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-                    <hr class="row">
-                    
-                    <div class="row">
-    <div class="col">
-        <a href="/2019/12/14/hello-world/" class="index-card-link">
-            <div class="card-body index-card-box">
-                <h4 class="card-title text-dark article-title">Hello World</h4>
-                <h6 class="card-subtitle mt-2 text-muted">
-                    By 
-                    Anonymous; 
-                    Published on 2019-12-14</h6>
-                <p class="card-text text-dark mt-2 article-text">
-                    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-                    <hr class="row">
-                    
-                    <div class="row">
-    <div class="col">
-        <a href="/2017/12/07/demo/" class="index-card-link">
-            <div class="card-body index-card-box">
-                <h4 class="card-title text-dark article-title">demo</h4>
-                <h6 class="card-subtitle mt-2 text-muted">
-                    By 
-                    Anonymous; 
-                    Published on 2017-12-07</h6>
-                <p class="card-text text-dark mt-2 article-text">
-                    node从入门到放弃
-                </p>
-            </div>
-        </a>
-    </div>
-</div>
-                    <hr class="row">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="paginator">
-                        <div class="row">
-    <div class="col">
-        <nav aria-label="paginator" class="paginator">
-            <ul class="pagination d-none d-md-flex pagination-lg justify-content-center">
-                <li class="page-item  disabled ">
-                    <a class="page-link"
-                        href="/"
-                        aria-label="Previous">
-                        <span aria-hidden="true">&laquo;
-                            Newer</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item  disabled ">
-                    <a class="page-link"
-                        href="/"
-                        aria-label="Next">
-                        <span
-                            aria-hidden="true">Older
-                            &raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="pagination d-md-none justify-content-center">
-                <li class="page-item  disabled ">
-                    <a class="page-link"
-                        href="/"
-                        aria-label="Previous">
-                        <span aria-hidden="true">&laquo;
-                            Newer</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item  disabled ">
-                    <a class="page-link"
-                        href="/"
-                        aria-label="Next">
-                        <span
-                            aria-hidden="true">Older
-                            &raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 pt-3">
-            
-    <div class="row">
-    <div class="col">
-        <h6>APPLAUSE FOR ME</h6>
-        <div id="applause-easy"></div>
-    </div>
-</div>
-    <hr class="row">
-
-
-    <div class="row">
-    <div class="col">
-        <h6>FEATURED TAGS</h6>
-        <div class="tags">
-            
-        </div>
-    </div>
-</div>
-    <hr class="row">
-
-
-    <div class="row">
-    <div class="col">
-        <h6>ABOUT ME</h6>
-        <div class="row">
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-8 text-center">
-                        <img src="https://via.placeholder.com/200x200.png?text=sidebar_avatar_link" alt="avatar" class="img-thumbnail">
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col text-center">
-                        <p class="text-muted">The owner of this website.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mt-2 sidebar-socialmedia">
-            <div class="row">
-    <div class="col text-center">
-        <ul class="list-inline">
-            
-            <li class="list-inline-item">
-                
-                <a href="https://github.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.facebook.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.pinterest.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.linkedin.com/in/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
-        </div>
-    </div>
-</div>
-    <hr class="row">
-
-
-    <div class="row">
-    <div class="col">
-        <h6>CONTACT</h6>
-        <address>
-            <strong>Adagio Author</strong><br>
-            1 Happy Rd. <br> Utopia
-        </address>
-    </div>
-</div>
-    <hr class="row">
-
-
-    <div class="row">
-    <div class="col">
-        <h6>ARCHIVES</h6>
-        <div class="archive">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li></ul>
-        </div>
-    </div>
-</div>
-    <hr class="row">
-
-
-    <div class="row">
-    <div class="col">
-        <ul class="list-inline">
-            <h6>FRIENDS</h6>
-            
-            <li class="list-inline-item"><a href="https://hexo.io" target="_blank" rel="noopener"><span class="text-muted">Hexo</span></a>
-            </li>
-            
-            <li class="list-inline-item"><a href="https://github.com" target="_blank" rel="noopener"><span class="text-muted">Github</span></a>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-    <hr class="row">
-
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="jumbotron jumbotron-fluid mb-0">
-        <div class="container-fluid">
-            <div class="col text-center">
-                <div class="bottom-social">
-                    <div class="row">
-    <div class="col text-center">
-        <ul class="list-inline">
-            
-            <li class="list-inline-item">
-                
-                <a href="https://github.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.facebook.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.pinterest.com/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-pinterest-p fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-            <li class="list-inline-item">
-                
-                <a href="https://www.linkedin.com/in/xxxxx" target="_blank" rel="noopener">
-                    <span class="fa-stack fa-2x icon-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
-                </div>
-                <p class="copyright text-muted">
-                    Copyright &copy; 小健博客
-                    <br>
-                    Thanks for coming!
-                    <br>
-                    <a href="https://github.com/Hanlin-Dong/hexo-theme-adagio" target="_blank" rel="noopener">Adagio</a> - A <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> theme made with love by
-                    <a href="http://www.hanlindong.com" target="_blank" rel="noopener">Hanlin Dong</a>.
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-    
-        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js"></script>
-        <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.bootcss.com/font-awesome/5.9.0/js/all.min.js"></script>
-         
-            <script type="text/x-mathjax-config">
-                MathJax.Hub.Config({
-                    CommonHTML: { linebreaks: { automatic: true } },
-                    "HTML-CSS": { linebreaks: { automatic: true } },
-                    SVG: { linebreaks: { automatic: true } }
-                });
-            </script>
-            <script src='https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <footer>
+      
         
-    
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
 
 
-<script src="/js/av.min.js"></script>
-<script src="/js/valine.min.js"></script>
-<script src="/js/applause-easy.js"></script>
 
-<script>
-$(document).ready(function() {
-    var a = new ApplauseEasy({
-        id: 'applause-easy',
-        appId: "xxxxxxxxxx",
-        appKey: "xxxxxxxxxx",
-        img_src: "http://img.hanlindong.com/blog/site/clap.png",
-        img_width: "50px",
-        img_height: "50px"
-    })
-})
+
+  <article id="post-常用数组方法集合" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2019-12-14T07:30:51.032Z"><a href="/2019/12/14/常用数组方法集合/">2019-12-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/12/14/常用数组方法集合/">常用数组方法集合</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h1 id="MDN-前端字典"><a href="#MDN-前端字典" class="headerlink" title="MDN         前端字典"></a>MDN         前端字典</h1><h3 id="数组有哪些方法？至少列出15个"><a href="#数组有哪些方法？至少列出15个" class="headerlink" title="数组有哪些方法？至少列出15个"></a>数组有哪些方法？至少列出15个</h3><h5 id="arr-from-从类数组对象或者可迭代对象中创建一个新的数组实例"><a href="#arr-from-从类数组对象或者可迭代对象中创建一个新的数组实例" class="headerlink" title="arr.from()    从类数组对象或者可迭代对象中创建一个新的数组实例"></a>arr.from()    从类数组对象或者可迭代对象中创建一个新的数组实例</h5><h5 id="arr-isArray-判断是否是一个数组对象"><a href="#arr-isArray-判断是否是一个数组对象" class="headerlink" title="arr.isArray()    判断是否是一个数组对象"></a>arr.isArray()    判断是否是一个数组对象</h5><h5 id="arr-of-根据一组数组来创建新的数组实例，支持任意的参数数量和类型。"><a href="#arr-of-根据一组数组来创建新的数组实例，支持任意的参数数量和类型。" class="headerlink" title="arr.of()    根据一组数组来创建新的数组实例，支持任意的参数数量和类型。"></a>arr.of()    根据一组数组来创建新的数组实例，支持任意的参数数量和类型。</h5><h5 id="arr-fill-将数组中指定区间的所有元素的值，都替换成某个固定的值"><a href="#arr-fill-将数组中指定区间的所有元素的值，都替换成某个固定的值" class="headerlink" title="arr.fill()    将数组中指定区间的所有元素的值，都替换成某个固定的值"></a>arr.fill()    将数组中指定区间的所有元素的值，都替换成某个固定的值</h5><h5 id="arr-pop-删除数组的最后一个元素，并返回这个元素"><a href="#arr-pop-删除数组的最后一个元素，并返回这个元素" class="headerlink" title="arr.pop()    删除数组的最后一个元素，并返回这个元素"></a>arr.pop()    删除数组的最后一个元素，并返回这个元素</h5><h5 id="arr-push-在数组末尾添加一个或多个元素，并返回数组的新长度。"><a href="#arr-push-在数组末尾添加一个或多个元素，并返回数组的新长度。" class="headerlink" title="arr.push()    在数组末尾添加一个或多个元素，并返回数组的新长度。"></a>arr.push()    在数组末尾添加一个或多个元素，并返回数组的新长度。</h5><h5 id="arr-reverse-颠倒数组中的元素的排列顺序"><a href="#arr-reverse-颠倒数组中的元素的排列顺序" class="headerlink" title="arr.reverse()    颠倒数组中的元素的排列顺序"></a>arr.reverse()    颠倒数组中的元素的排列顺序</h5><h5 id="arr-shift-删除数组的第一个元素，并返回这个元素"><a href="#arr-shift-删除数组的第一个元素，并返回这个元素" class="headerlink" title="arr.shift()    删除数组的第一个元素，并返回这个元素"></a>arr.shift()    删除数组的第一个元素，并返回这个元素</h5><h5 id="arr-unshift-在数组的开头增加一个或多个元素，并返回数组的新长度"><a href="#arr-unshift-在数组的开头增加一个或多个元素，并返回数组的新长度" class="headerlink" title="arr.unshift()    在数组的开头增加一个或多个元素，并返回数组的新长度"></a>arr.unshift()    在数组的开头增加一个或多个元素，并返回数组的新长度</h5><h5 id="arr-sort-对数组元素进行排序，并返回当前数组"><a href="#arr-sort-对数组元素进行排序，并返回当前数组" class="headerlink" title="arr.sort()    对数组元素进行排序，并返回当前数组"></a>arr.sort()    对数组元素进行排序，并返回当前数组</h5><h5 id="arr-splice-在任意的位置给数组添加或删除任意个元素"><a href="#arr-splice-在任意的位置给数组添加或删除任意个元素" class="headerlink" title="arr.splice()    在任意的位置给数组添加或删除任意个元素"></a>arr.splice()    在任意的位置给数组添加或删除任意个元素</h5><h5 id="arr-concat-返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组"><a href="#arr-concat-返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组" class="headerlink" title="arr.concat()    返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组"></a>arr.concat()    返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组</h5><h5 id="arr-includes-判断当前数组是否包含某指定的值，如果是返回true，不是返回false"><a href="#arr-includes-判断当前数组是否包含某指定的值，如果是返回true，不是返回false" class="headerlink" title="arr.includes()    判断当前数组是否包含某指定的值，如果是返回true，不是返回false"></a>arr.includes()    判断当前数组是否包含某指定的值，如果是返回true，不是返回false</h5><h5 id="arr-join-连接所有数组元素组成一个字符串"><a href="#arr-join-连接所有数组元素组成一个字符串" class="headerlink" title="arr.join()    连接所有数组元素组成一个字符串"></a>arr.join()    连接所有数组元素组成一个字符串</h5><h5 id="arr-slice-抽取当前数组中的一段元素组合成一个新数组"><a href="#arr-slice-抽取当前数组中的一段元素组合成一个新数组" class="headerlink" title="arr.slice()    抽取当前数组中的一段元素组合成一个新数组"></a>arr.slice()    抽取当前数组中的一段元素组合成一个新数组</h5><h5 id="arr-toString-返回一个由所有数组元素组成的字符串"><a href="#arr-toString-返回一个由所有数组元素组成的字符串" class="headerlink" title="arr.toString()    返回一个由所有数组元素组成的字符串"></a>arr.toString()    返回一个由所有数组元素组成的字符串</h5><h5 id="arr-toLocaleString-返回一个由所有数组元素组成的本地化后的字符串"><a href="#arr-toLocaleString-返回一个由所有数组元素组成的本地化后的字符串" class="headerlink" title="arr.toLocaleString()    返回一个由所有数组元素组成的本地化后的字符串"></a>arr.toLocaleString()    返回一个由所有数组元素组成的本地化后的字符串</h5><h5 id="arr-indexOf-返回数组中第一个与指定值相等的元素的索引，如果找不到就返回-1"><a href="#arr-indexOf-返回数组中第一个与指定值相等的元素的索引，如果找不到就返回-1" class="headerlink" title="arr.indexOf()    返回数组中第一个与指定值相等的元素的索引，如果找不到就返回-1"></a>arr.indexOf()    返回数组中第一个与指定值相等的元素的索引，如果找不到就返回-1</h5><h5 id="arr-lastIndexOf-返回数组最后一个与指定值相等的元素的索引，如果找不到就返回-1"><a href="#arr-lastIndexOf-返回数组最后一个与指定值相等的元素的索引，如果找不到就返回-1" class="headerlink" title="arr.lastIndexOf()    返回数组最后一个与指定值相等的元素的索引，如果找不到就返回-1"></a>arr.lastIndexOf()    返回数组最后一个与指定值相等的元素的索引，如果找不到就返回-1</h5><h5 id="arr-forEach-为数组中每个元素执行一次回调函数"><a href="#arr-forEach-为数组中每个元素执行一次回调函数" class="headerlink" title="arr.forEach()    为数组中每个元素执行一次回调函数"></a>arr.forEach()    为数组中每个元素执行一次回调函数</h5><h5 id="arr-some-如果数组中至少有一个元素满足测试函数，则返回-true，否则返回-false。"><a href="#arr-some-如果数组中至少有一个元素满足测试函数，则返回-true，否则返回-false。" class="headerlink" title="arr.some()    如果数组中至少有一个元素满足测试函数，则返回 true，否则返回 false。"></a>arr.some()    如果数组中至少有一个元素满足测试函数，则返回 true，否则返回 false。</h5><h5 id="arr-filter-将所有在过滤函数中返回true的数组元素放进一个新数组中并返回。"><a href="#arr-filter-将所有在过滤函数中返回true的数组元素放进一个新数组中并返回。" class="headerlink" title="arr.filter()    将所有在过滤函数中返回true的数组元素放进一个新数组中并返回。"></a>arr.filter()    将所有在过滤函数中返回true的数组元素放进一个新数组中并返回。</h5><h5 id="arr-find-找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回-undefined。"><a href="#arr-find-找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回-undefined。" class="headerlink" title="arr.find()    找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回 undefined。"></a>arr.find()    找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回 undefined。</h5><h5 id="arr-findIndex-找到第一个满足测试函数的元素并返回那个元素的索引，如果找不到，则返回-1。"><a href="#arr-findIndex-找到第一个满足测试函数的元素并返回那个元素的索引，如果找不到，则返回-1。" class="headerlink" title="arr.findIndex()    找到第一个满足测试函数的元素并返回那个元素的索引，如果找不到，则返回-1。"></a>arr.findIndex()    找到第一个满足测试函数的元素并返回那个元素的索引，如果找不到，则返回-1。</h5><h5 id="arr-keys-返回一个数组迭代器对象，该迭代器会包含所有数组元素的键"><a href="#arr-keys-返回一个数组迭代器对象，该迭代器会包含所有数组元素的键" class="headerlink" title="arr.keys()    返回一个数组迭代器对象，该迭代器会包含所有数组元素的键"></a>arr.keys()    返回一个数组迭代器对象，该迭代器会包含所有数组元素的键</h5><h5 id="arr-map-返回一个由回调函数的返回值组成的新数组"><a href="#arr-map-返回一个由回调函数的返回值组成的新数组" class="headerlink" title="arr.map()    返回一个由回调函数的返回值组成的新数组"></a>arr.map()    返回一个由回调函数的返回值组成的新数组</h5><h5 id="arr-values-返回一个数组迭代器对象，该迭代器会包含所有数组元素的值。"><a href="#arr-values-返回一个数组迭代器对象，该迭代器会包含所有数组元素的值。" class="headerlink" title="arr.values()    返回一个数组迭代器对象，该迭代器会包含所有数组元素的值。"></a>arr.values()    返回一个数组迭代器对象，该迭代器会包含所有数组元素的值。</h5><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="哪些方法会改变原数组-常用方法"><a href="#哪些方法会改变原数组-常用方法" class="headerlink" title="哪些方法会改变原数组(常用方法)"></a>哪些方法会改变原数组(常用方法)</h3><h5 id="arr-pop-删除数组的最后一个元素，并返回这个元素-1"><a href="#arr-pop-删除数组的最后一个元素，并返回这个元素-1" class="headerlink" title="arr.pop()    删除数组的最后一个元素，并返回这个元素"></a>arr.pop()    删除数组的最后一个元素，并返回这个元素</h5><h5 id="arr-push-在数组末尾添加一个或多个元素，并返回数组的新长度。-1"><a href="#arr-push-在数组末尾添加一个或多个元素，并返回数组的新长度。-1" class="headerlink" title="arr.push()    在数组末尾添加一个或多个元素，并返回数组的新长度。"></a>arr.push()    在数组末尾添加一个或多个元素，并返回数组的新长度。</h5><h5 id="arr-reverse-颠倒数组中的元素的排列顺序-1"><a href="#arr-reverse-颠倒数组中的元素的排列顺序-1" class="headerlink" title="arr.reverse()    颠倒数组中的元素的排列顺序"></a>arr.reverse()    颠倒数组中的元素的排列顺序</h5><h5 id="arr-shift-删除数组的第一个元素，并返回这个元素-1"><a href="#arr-shift-删除数组的第一个元素，并返回这个元素-1" class="headerlink" title="arr.shift()    删除数组的第一个元素，并返回这个元素"></a>arr.shift()    删除数组的第一个元素，并返回这个元素</h5><h5 id="arr-unshift-在数组的开头增加一个或多个元素，并返回数组的新长度-1"><a href="#arr-unshift-在数组的开头增加一个或多个元素，并返回数组的新长度-1" class="headerlink" title="arr.unshift()    在数组的开头增加一个或多个元素，并返回数组的新长度"></a>arr.unshift()    在数组的开头增加一个或多个元素，并返回数组的新长度</h5><h5 id="arr-sort-对数组元素进行排序，并返回当前数组-1"><a href="#arr-sort-对数组元素进行排序，并返回当前数组-1" class="headerlink" title="arr.sort()    对数组元素进行排序，并返回当前数组"></a>arr.sort()    对数组元素进行排序，并返回当前数组</h5><h5 id="arr-splice-在任意的位置给数组添加或删除任意个元素-1"><a href="#arr-splice-在任意的位置给数组添加或删除任意个元素-1" class="headerlink" title="arr.splice()    在任意的位置给数组添加或删除任意个元素"></a>arr.splice()    在任意的位置给数组添加或删除任意个元素</h5><h3 id="哪些方法不会改变原数组-常用方法"><a href="#哪些方法不会改变原数组-常用方法" class="headerlink" title="哪些方法不会改变原数组(常用方法)"></a>哪些方法不会改变原数组(常用方法)</h3><h5 id="concat-返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组"><a href="#concat-返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组" class="headerlink" title="concat()    返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组"></a>concat()    返回一个由当前数组和其他若干数组或若干非数组值组合而成的新数组</h5><h5 id="jion-连接所有数组元素组成一个字符串"><a href="#jion-连接所有数组元素组成一个字符串" class="headerlink" title="jion()    连接所有数组元素组成一个字符串"></a>jion()    连接所有数组元素组成一个字符串</h5><h5 id="slice-抽取当前数组中的一段元素组合成一个新数组"><a href="#slice-抽取当前数组中的一段元素组合成一个新数组" class="headerlink" title="slice()    抽取当前数组中的一段元素组合成一个新数组"></a>slice()    抽取当前数组中的一段元素组合成一个新数组</h5>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-hello-world" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2019-12-14T07:30:51.022Z"><a href="/2019/12/14/hello-world/">2019-12-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/12/14/hello-world/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-demo" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2017-12-07T03:33:11.000Z"><a href="/2017/12/07/demo/">2017-12-07</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/12/07/demo/">demo</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h3 id="node从入门到放弃"><a href="#node从入门到放弃" class="headerlink" title="node从入门到放弃"></a>node从入门到放弃</h3>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+<nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="as_sitesearch" value="yoursite.com">
+  </form>
+</div>
+
+
+  
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2020 Mihong
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
 </script>
-
-
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?123456789";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11111111-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-11111111-1');
-</script>
-
 
 </body>
 </html>
