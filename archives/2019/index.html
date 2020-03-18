@@ -35,7 +35,7 @@
     
       <li><a href="/">Home</a></li>
     
-      <li><a href="/archives">Archives</a></li>
+      <li><a href="//archives">Archives</a></li>
     
   </ul>
   <div class="clearfix"></div>
@@ -53,33 +53,9 @@
         <div class="post-content">
           <header>
             <div class="icon"></div>
-            <time datetime="2019-12-14T07:30:51.032Z"><a href="/2019/12/14/笔记/">2019-12-14</a></time>
+            <time datetime="2019-12-14T07:30:51.022Z"><a href="/2019/12/14/ES6/">2019-12-14</a></time>
             
-              <h1 class="title"><a href="/2019/12/14/笔记/">笔记</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2019-12-14T07:30:51.032Z"><a href="/2019/12/14/常用数组方法集合/">2019-12-14</a></time>
-            
-              <h1 class="title"><a href="/2019/12/14/常用数组方法集合/">常用数组方法集合</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2019-12-14T07:30:51.022Z"><a href="/2019/12/14/hello-world/">2019-12-14</a></time>
-            
-              <h1 class="title"><a href="/2019/12/14/hello-world/">Hello World</a></h1>
+              <h1 class="title"><a href="/2019/12/14/ES6/">Hello World</a></h1>
             
           </header>
         </div>
@@ -88,17 +64,33 @@
   </div>
 </div></div>
     <aside id="sidebar" class="alignright">
+  <SCRIPT language=javascript>
+  function search(formname) {
+      formname.method = "get";
+      formname.action = "http://www.baidu.com/baidu";
+      document.search_form.word.value = document.search_form.word.value + " site:mjiayou.com";
+      return true;
+  }
+  </SCRIPT>
+  
   <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="as_sitesearch" value="yoursite.com">
-  </form>
+      <form name="search_form" target="_blank" onsubmit="search(this)">
+          <input type="search" name="word" results="0" placeholder="百度站内搜索" onblur="this.value=''">
+          <!-- <input type="submit" value="搜索"> -->
+      </form>
+  </div>
+
+   
+
+  
+
+  <div class="widget tag">
+    <h3 class="title">友情链接</h3>
+    <ul class="entry">
+        <li><a href="http://blog.csdn.net/nezar" title="Nezar" target="_blank">CSDN</a></li>
+    </ul>
 </div>
 
-
-  
-
-  
 </aside>
     <div class="clearfix"></div>
   </div>
@@ -123,5 +115,17 @@
 })(jQuery);
 </script>
 
+
+<script type="text/javascript">
+  var duoshuo_shortname = '';
+  var duoshuoQuery = {short_name:duoshuo_shortname};
+      (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = 'http://static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+  </script>
 </body>
 </html>
