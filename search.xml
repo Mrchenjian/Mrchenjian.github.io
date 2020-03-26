@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>新客站</title>
-    <url>/2020/03/18/JavaScript/%E6%96%B0%E5%AE%A2%E7%AB%99/</url>
-    <content><![CDATA[<blockquote class="blockquote-center"><h1 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h1></blockquote>
+    <title>JS 数据类型底层原理</title>
+    <url>/2020/03/26/JavaScript/page/</url>
+    <content><![CDATA[<blockquote class="blockquote-center"><h2 id="tyoeof-nul-底层原理："><a href="#tyoeof-nul-底层原理：" class="headerlink" title="tyoeof nul  底层原理："></a>tyoeof nul  底层原理：</h2><div style="text-align=center">
+    对象在计算机的存储 用二进制表示的，在javaScipt中如果二进制的前三位能为0，系统会判定为是object类型，null的存储二进制是000，
 
-<h2 id="2-01-五年的我i七年前"><a href="#2-01-五年的我i七年前" class="headerlink" title="2.01  五年的我i七年前"></a>2.01  五年的我i七年前</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  function Father (uname,age) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this指向父类的实例对象</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.uname &#x3D; uname;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.age &#x3D; age;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; 只要把父类的this指向子类的this既可</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">function Son (uname, age,score) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this指向子类构造函数</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this.uname &#x3D; uname;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this.age &#x3D; age;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; Father(uname,age);</span></pre></td></tr><tr><td class="code"><pre><span class="line">	Father.call(this,uname,age);</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.score &#x3D; score;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">Son.prototype.sing &#x3D; function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	console.log(this.uname + &#39;唱歌&#39;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">var obj &#x3D; new Son(&#39;刘德华&#39;,22,99);</span></pre></td></tr><tr><td class="code"><pre><span class="line">console.log(obj.uname);</span></pre></td></tr><tr><td class="code"><pre><span class="line">console.log(obj.score);</span></pre></td></tr><tr><td class="code"><pre><span class="line">obj.sing();</span></pre></td></tr></table></figure>
-<p><a href='wwww.baidu.com'>百度</a></p>
-]]></content>
+<pre><code>000  对类型
+111  整型
+100  字符串
+110  布尔声应</code></pre><p>if(![]==true)</p>
+<p>if([]==true)  </p>
+<p>都正确   取反是对地址取反</p>
+</blockquote>]]></content>
       <categories>
-        <category>前端</category>
+        <category>JavaScript</category>
       </categories>
-      <tags>
-        <tag>新客站 tag</tag>
-      </tags>
   </entry>
   <entry>
     <title>javascript内存回收机制</title>
