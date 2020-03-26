@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>新客站</title>
-    <url>/2020/03/18/%E6%96%B0%E5%AE%A2%E7%AB%99/</url>
+    <url>/2020/03/18/JavaScript/%E6%96%B0%E5%AE%A2%E7%AB%99/</url>
     <content><![CDATA[<blockquote class="blockquote-center"><h1 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h1></blockquote>
 
 <h2 id="2-01-五年的我i七年前"><a href="#2-01-五年的我i七年前" class="headerlink" title="2.01  五年的我i七年前"></a>2.01  五年的我i七年前</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  function Father (uname,age) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this指向父类的实例对象</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.uname &#x3D; uname;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.age &#x3D; age;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; 只要把父类的this指向子类的this既可</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">function Son (uname, age,score) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this指向子类构造函数</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this.uname &#x3D; uname;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; this.age &#x3D; age;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#x2F;&#x2F; Father(uname,age);</span></pre></td></tr><tr><td class="code"><pre><span class="line">	Father.call(this,uname,age);</span></pre></td></tr><tr><td class="code"><pre><span class="line">	this.score &#x3D; score;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">Son.prototype.sing &#x3D; function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	console.log(this.uname + &#39;唱歌&#39;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">var obj &#x3D; new Son(&#39;刘德华&#39;,22,99);</span></pre></td></tr><tr><td class="code"><pre><span class="line">console.log(obj.uname);</span></pre></td></tr><tr><td class="code"><pre><span class="line">console.log(obj.score);</span></pre></td></tr><tr><td class="code"><pre><span class="line">obj.sing();</span></pre></td></tr></table></figure>
@@ -17,13 +17,14 @@
   </entry>
   <entry>
     <title>javascript内存回收机制</title>
-    <url>/2019/03/09/JavaScript%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</url>
+    <url>/2019/03/09/JavaScript/JavaScript%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</url>
     <content><![CDATA[<h2 id="js垃圾回收"><a href="#js垃圾回收" class="headerlink" title="js垃圾回收"></a>js垃圾回收</h2><p>JavaScript有自动垃圾回收机制，也就是说执行环境会负责管理代码执行过程中使用的内存，在开发过程中就无需考虑内存分配及无用内存的回收问题了</p>
 <h2 id="变量生命周期"><a href="#变量生命周期" class="headerlink" title="变量生命周期"></a>变量生命周期</h2><p>变量分为： 局部变量和全局变量<br>局部变量：函数执行完释放  全局变量等程序执行完释放</p>
-<h2 id="标记方式"><a href="#标记方式" class="headerlink" title="标记方式"></a>标记方式</h2><p> <strong>标记清除</strong></p>
+<h2 id="标记方式"><a href="#标记方式" class="headerlink" title="标记方式"></a>标记方式</h2><p> <strong>标记清除 （谷歌）</strong></p>
 <p> 这是javascript中最常用的垃圾回收方式。当变量进入执行环境是，就标记这个变量为“进入环境”。从逻辑上讲，永远不能释放进入环境的变量所占用的内存，因为只要执行流进入相应的环境，就可能会用到他们。当变量离开环境时，则将其标记为“离开环境”。<br>垃圾收集器在运行的时候会给存储在内存中的所有变量都加上标记。然后，它会去掉环境中的变量以及被环境中的变量引用的标记。而在此之后再被加上标记的变量将被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了。最后。垃圾收集器完成内存清除工作，销毁那些带标记的值，并回收他们所占用的内存空间</p>
-<p>1、在js中，全局变量和window对象会一直存在，不会被回收<br>2、递归所用到的所有方法和变量，不会被回收<br>3、闭包里用到的变量，不会被回收<br>4、所有被标记的，都被认为是垃圾，会启动其回收机制，释放内存<br>5、栈内存释放  函数执行完 ，形成的执行上下文中  没有东西被上下文以外的东西占用  此上下文就会执行环境栈中移除（释放）如果有被占用，则压缩到栈的底部 （没有释放  =》闭包）</p>
-<p><strong>引用计数</strong></p>
+<p>1、在js中，全局变量和window对象会一直存在，不会被回收<br>2、递归所用到的所有方法和变量，不会被回收<br>3、闭包里用到的变量，不会被回收<br>4、所有被标记的，都被认为是垃圾，会启动其回收机制，释放内存<br>5、栈内存释放  函数执行完 ，形成的执行上下文中  没有东西被上下文以外的东西占用  此上下文就会执行环境栈中移除（释放）如果有被占用，则压缩到栈的底部 （没有释放  =》闭包）<br>6、对象等于 null   就没有人占用它 就会回收 堆内存释放  变量 = null</p>
+<p><strong>引用计数 （IE）</strong></p>
+<p>弊端：  很多情况下  会导致记录的数字不是很准确 导致很多应该被清除的内存， 没有被清除掉  =&gt; 内存泄漏）</p>
 <p>　另一种不太常见的垃圾回收策略是引用计数。引用计数的含义是跟踪记录每个值被引用的次数。当声明了一个变量并将一个引用类型赋值给该变量时，则这个值的引用次数就是1。相反，如果包含对这个值引用的变量又取得了另外一个值，则这个值的引用次数就减1。当这个引用次数变成0时，则说明没有办法再访问这个值了，因而就可以将其所占的内存空间给收回来。这样，垃圾收集器下次再运行时，它就会释放那些引用次数为0的值所占的内存</p>
 <p>但是用这种方法存在着一个问题，下面来看看代码：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">problem</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> objA = <span class="keyword">new</span> <span class="built_in">Object</span>();</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> objB = <span class="keyword">new</span> <span class="built_in">Object</span>();</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    objA.someOtherObject = objB;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    objB.anotherObject = objA;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
