@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>内存使用不当</title>
+    <url>/2020/03/27/JavaScript/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%BD%93/</url>
+    <content><![CDATA[<p><strong>内存查看</strong></p>
+<p>浏览器： window.performance<br>node:   process.memoryUsage();</p>
+<p><strong>V8内存的分配</strong></p>
+<p>新生代内存空间<br>老生代内存空间</p>
+<p>JavaScript回收得时候，会中断执行 jascript得设计是为了跑前端脚本-不持续，一执行就没了<br><strong>内存的大小</strong><br>和操作系统有关64位为1.4G，32位为0.7G</p>
+<p>64位下新生代的空间为64MB，老生代为1400MB。</p>
+<p>32位下新生代的空间为16MB，老生代为700MB</p>
+<p><strong>容易引发内存使用不当的情景</strong></p>
+<ul>
+<li>滥用全局变量        一定要手动释放 变量=undefined</li>
+<li>缓存是优化的小帮手   但是要设置 缓存索<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a=[];</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">15</span>; i++)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(a.length&gt;<span class="number">4</span>)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        a.shift();</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    a.push(<span class="keyword">new</span> <span class="built_in">Array</span>(size));</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></li>
+<li>前端大文件上传         切片上传</li>
+<li>node 端 读取  会出现内存问题   不要用readfile<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fs.readfile()</span></pre></td></tr></table></figure>
+解决方案：   创建一个 readStream  以流的形式</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+  </entry>
+  <entry>
     <title>异步/异步和js执行的步骤</title>
     <url>/2020/03/26/%E5%BC%82%E6%AD%A5/%E5%BC%82%E6%AD%A5%E5%92%8Cjs%E6%89%A7%E8%A1%8C%E7%9A%84%E6%AD%A5%E9%AA%A4/</url>
-    <content><![CDATA[<p><strong>前端使用异步的场景</strong><br>1、定时任务：setTimeout，setlnverval<br>2、网络请求：ajax请求，动态<img>加载<br>3、事件绑定</p>
+    <content><![CDATA[<p><strong>前端使用异步的场景</strong><br>1、定时任务：setTimeout，setlnverval<br>2、网络请求：ajax请求，动态加载<br>3、事件绑定</p>
+<p><strong>javascrip执行顺序</strong></p>
+<p>1、代码自上而下执行<br>2、逐行执行代码<br>3、有代码异步操作<br>4、异步代码插入异步队列(异步队列分：宏任务和微任务)<br>5、执行完成（查看异步队列是否为空 不为空执行异步队列）</p>
+<p><strong>异步队列的执行顺序</strong><br>1、在执行下一次宏任务之前会先执行完所有微任务<br>2、只要有微任务 宏任务就会被执行<br>3、同步 =&gt; 微任务 =&gt; 宏任务</p>
+<p><strong>微任务</strong> promise , process nextTick<br><strong>宏任务</strong> 整体代码 script settimeout  setInterval</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.Log(<span class="number">100</span>) </span></pre></td></tr><tr><td class="code"><pre><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.Log(<span class="number">200</span>) </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;) </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span><span class="number">.1</span>og(<span class="number">300</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment">// 异步和单线程·执行第一行，打印100</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 执行setTimeout后，传入setTimeout的函数会被暂存起来，不会立即执行（单线程的特点，不能同时干两件事）</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 执行最后一行，打印300</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 待所有程序执行完，处于空闲状态时，会立马看有没有暂存起来的要执行</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 发现暂存起来的setTimeout中的函数无需等待时间，就立即来过来执行</span></span></pre></td></tr></table></figure>
 
 <p><strong>同步或异步的区别是什么</strong><br>1、同步会阻塞代码执行，而异步不会<br>2、alert是同步，setTimeout是异步</p>
